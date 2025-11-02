@@ -2,6 +2,7 @@ import { useState } from 'react';
 import axios from "axios";
 import './App.css';
 import { Input } from './components/ui/input';
+import { Button } from './components/ui/button';
 
 function App() {
   const [math1, setMath1] = useState("");
@@ -62,12 +63,12 @@ function App() {
           />
         </div>
 
-        <button
-          className="bg-blue-400 text-white px-4 py-2 rounded-xl"
+        <Button
+          className="bg-blue-600 text-white px-4 py-2 rounded-xl"
           onClick={handleCheck}
         >
           Calculate Total
-        </button>
+        </Button>
 
         {total && !total.error && (
           <div className="text-xl mt-4">
