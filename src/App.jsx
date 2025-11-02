@@ -33,14 +33,14 @@ function App() {
             type="number"
             placeholder="Module 1"
             value={math2}
-            onChange={(e) => setMath1(e.target.value)}
+            onChange={(e) => setMath2(e.target.value)}
             className="border p-2 rounded m-1"
           />
           <Input
             type="number"
             placeholder="Module 2"
             value={math1}
-            onChange={(e) => setMath2(e.target.value)}
+            onChange={(e) => setMath1(e.target.value)}
             className="border p-2 rounded m-1"
           />
         </div>
@@ -51,14 +51,14 @@ function App() {
             type="number"
             placeholder="Module 1"
             value={verbal2}
-            onChange={(e) => setVerbal1(e.target.value)}
+            onChange={(e) => setVerbal2(e.target.value)}
             className="border p-2 rounded m-1"
           />
           <Input
             type="number"
             placeholder="Module 2"
             value={verbal1}
-            onChange={(e) => setVerbal2(e.target.value)}
+            onChange={(e) => setVerbal1(e.target.value)}
             className="border p-2 rounded m-1"
           />
         </div>
